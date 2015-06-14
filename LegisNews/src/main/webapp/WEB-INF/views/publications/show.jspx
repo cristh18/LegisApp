@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_legis_demo_domain_Publication" object="${publication}" path="/publications" z="GLDwWSZVr4AJuZG+pqeC8hte+2Q=">
+        <field:display field="id" id="s_com_legis_demo_domain_Publication_id" object="${publication}" z="D3fc/+yrxiCCKz3IWJiKULAtT2E="/>
+        <field:display field="publicationName" id="s_com_legis_demo_domain_Publication_publicationName" object="${publication}" z="mZEDwOltaZXuL/T/0zxMsdpx/ng="/>
+        <field:display field="publicationNumber" id="s_com_legis_demo_domain_Publication_publicationNumber" object="${publication}" z="dxQWI0SpYvGwokQvGnpmRVN3RpE="/>
+        <field:display field="category" id="s_com_legis_demo_domain_Publication_category" object="${publication}" z="QExpk/fs2s+m9BuCI5Vt8Pos/1g="/>
+    </page:show>
+</div>

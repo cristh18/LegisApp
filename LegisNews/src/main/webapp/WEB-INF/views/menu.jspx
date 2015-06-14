@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_activity" z="NF6PmQkAyo1JgYYtjuLuGgtZu1o=">
+            <menu:item id="i_activity_new" messageCode="global_menu_new" url="/activitys?form" z="humNnazx/vh/qV9QiaaPFxfrRKQ="/>
+            <menu:item id="i_activity_list" messageCode="global_menu_list" url="/activitys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Xp5og2rY8Oyevfsbh0NHJCrRUu4="/>
+        </menu:category>
+        <menu:category id="c_autor" z="XS05D9riiZHqhf/TsyeM3tm7kCw=">
+            <menu:item id="i_autor_new" messageCode="global_menu_new" url="/autors?form" z="AFkal0pFNGY1rLK8Mp4yrkg+wy0="/>
+            <menu:item id="i_autor_list" messageCode="global_menu_list" url="/autors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Vd/up5WMBRG7Ck9ji9lIQK5t6sE="/>
+        </menu:category>
+        <menu:category id="c_book" z="WxiVAJUlwzLkYi6u7YpEjYOT82A=">
+            <menu:item id="i_book_new" messageCode="global_menu_new" url="/books?form" z="gAIxvrBOHQC/N0HWTGD46jzwyk8="/>
+            <menu:item id="i_book_list" messageCode="global_menu_list" url="/books?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VM0+BikyiEq8a8S+W6bSp3FXQFo="/>
+        </menu:category>
+        <menu:category id="c_category" z="kY676wLbZKc59UbcUGM8ogjOGOc=">
+            <menu:item id="i_category_new" messageCode="global_menu_new" url="/categorys?form" z="Xqz6msHtFFIlT4/UwJALJOYTD1I="/>
+            <menu:item id="i_category_list" messageCode="global_menu_list" url="/categorys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6D9be6DQ6UCnl0O7TDbbrkOhNIE="/>
+        </menu:category>
+        <menu:category id="c_news" z="/GYP5OCuHDR51pEBl2hXSgh9Kzs=">
+            <menu:item id="i_news_new" messageCode="global_menu_new" url="/news?form" z="KKGmhlBtoqXdUbIsLPG2pR5jcbw="/>
+            <menu:item id="i_news_list" messageCode="global_menu_list" url="/news?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Z3jXJYPsEw3tWVe0eJEvD8n+vQg="/>
+        </menu:category>
+        <menu:category id="c_publication" z="9sB3vEvQepdvzW7wFxJDityWLyE=">
+            <menu:item id="i_publication_new" messageCode="global_menu_new" url="/publications?form" z="YpEPHxprKeMgxNJR9r+ql2cdZnM="/>
+            <menu:item id="i_publication_list" messageCode="global_menu_list" url="/publications?page=1&amp;size=${empty param.size ? 10 : param.size}" z="r98cWVkvU2JPHUMnjI8CAeG2bMo="/>
+        </menu:category>
+    </menu:menu>
+</div>

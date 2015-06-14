@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_legis_demo_domain_Autor" object="${autor}" path="/autors" z="OuuFquLuJpP6lJccejTHBgfC/eY=">
+        <field:display field="id" id="s_com_legis_demo_domain_Autor_id" object="${autor}" z="ZbsfAVJqgIe4X/5oLvH10hT1i8A="/>
+        <field:display field="autorName" id="s_com_legis_demo_domain_Autor_autorName" object="${autor}" z="wG3EMkwrdp1qTSNbDbcBMnPJvoY="/>
+        <field:display field="autorLastName" id="s_com_legis_demo_domain_Autor_autorLastName" object="${autor}" z="c2U1Wrmp9pjscpa/Q4+CPiBiUWA="/>
+        <field:display field="nationality" id="s_com_legis_demo_domain_Autor_nationality" object="${autor}" z="LTjrEy700+uGckVrPEbCGCVVc8Y="/>
+        <field:display field="publication" id="s_com_legis_demo_domain_Autor_publication" object="${autor}" z="itGvKUXJRHYlbESaBfk+EQpVczo="/>
+    </page:show>
+</div>

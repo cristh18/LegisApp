@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_legis_demo_domain_Publication" items="${publications}" z="33B9VFb7MzdLiqpLAdO3R5j7taM=">
+        <table:table data="${publications}" id="l_com_legis_demo_domain_Publication" path="/publications" typeIdFieldName="id_" z="KObw8W36E/5TwQKwFDxS8y5IiWs=">
+            <table:column id="c_com_legis_demo_domain_Publication_id" property="id" z="s4qF61dN+zK2702/dTru7C/EBD4="/>
+            <table:column id="c_com_legis_demo_domain_Publication_publicationName" property="publicationName" z="aol7OR2BUeZhEGekh/XCUTH97oY="/>
+            <table:column id="c_com_legis_demo_domain_Publication_publicationNumber" property="publicationNumber" z="FR+mHyEMu83LcLb+BcuPv9GASH4="/>
+            <table:column id="c_com_legis_demo_domain_Publication_category" property="category" z="uEDVZUuFqhlK/vgsULFH4zVgU4o="/>
+        </table:table>
+    </page:list>
+</div>

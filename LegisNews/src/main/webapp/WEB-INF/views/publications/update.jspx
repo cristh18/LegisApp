@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_legis_demo_domain_Publication" idField="id_" modelAttribute="publication" path="/publications" versionField="Version" z="Km/3GxT4WETQyNRtx3Zz2dVTRfI=">
+        <field:input field="id" id="c_com_legis_demo_domain_Publication_id" required="true" validationMessageCode="field_invalid_integer" z="uTzlCEGQiV4rnkwjD9nGZHIKtJw="/>
+        <field:input field="publicationName" id="c_com_legis_demo_domain_Publication_publicationName" max="20" required="true" z="B+yvmybk5bDNsocNuTr0cQ4te8s="/>
+        <field:input field="publicationNumber" id="c_com_legis_demo_domain_Publication_publicationNumber" required="true" validationMessageCode="field_invalid_integer" z="hQK9WrKnjHjvCBMbcC23t/6TOJg="/>
+        <field:select field="category" id="c_com_legis_demo_domain_Publication_category" itemValue="id_" items="${categorys}" path="/categorys" z="FcOKP4wAfeiJCDPVIW9zOkhWrVg="/>
+    </form:update>
+</div>

@@ -1,0 +1,58 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-06-13 20:39:46
+project --topLevelPackage com.legis.demo --projectName LegisNews --java 6 --packaging WAR
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-06-13 20:40:01
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-06-13 20:40:05
+hint
+hint
+jpa setup --database MYSQL --provider HIBERNATE 
+entity jpa --class com.legis.demo.domain.Activity --activeRecord true --testAutomatically true --inheritanceType SINGLE_TABLE 
+entity jpa --class com.legis.demo.domain.Comment --extends ~.domain.Activity --testAutomatically 
+entity jpa --class com.legis.demo.domain.Favorite --extends ~.domain.Activity --testAutomatically 
+focus --class ~.domain.Activity
+field number --type java.lang.Long --fieldName id --notNull true
+field string --fieldName activityName --notNull true --sizeMax 20
+entity jpa --class com.legis.demo.domain.Publication --activeRecord true --testAutomatically true --inheritanceType SINGLE_TABLE 
+field number --type java.lang.Long --fieldName id --notNull true
+field string --fieldName publicationName --notNull true --sizeMax 20
+field number --type java.lang.Long --fieldName publicationNumber --notNull true
+entity jpa --class com.legis.demo.domain.News --extends ~.domain.Publication --testAutomatically 
+entity jpa --class com.legis.demo.domain.Book --extends ~.domain.Publication --testAutomatically 
+entity jpa --class com.legis.demo.domain.Category --activeRecord true --testAutomatically true 
+field number --type java.lang.Long --fieldName id --notNull true
+field string --fieldName categoryName --notNull true --sizeMax 20
+entity jpa --class com.legis.demo.domain.Autor --activeRecord true --testAutomatically true 
+field number --type java.lang.Long --fieldName id --notNull true
+field string --fieldName autorName --notNull true --sizeMax 20
+field string --fieldName autorLastName --notNull true --sizeMax 20
+field string --fieldName nationality --notNull false --sizeMax 20
+field reference --type ~.domain.Publication --fieldName publication --cardinality MANY_TO_ONE --joinColumnName ID_PUBLICATION
+focus --class ~.domain.Activity
+field reference --type ~.domain.Publication --fieldName publication --cardinality MANY_TO_ONE --joinColumnName ID_PUBLICATION
+focus --class ~.domain.Publication
+field reference --type ~.domain.Category --fieldName category --cardinality MANY_TO_ONE --joinColumnName ID_CATEGORY
+repository jpa --interface com.legis.demo.dao.ActivityDAO --entity ~.domain.Activity
+repository jpa --interface com.legis.demo.dao.AutorDAO --entity ~.domain.Autor
+repository jpa --interface com.legis.demo.dao.BookDAO --entity ~.domain.Book
+repository jpa --interface com.legis.demo.dao.CategoryDAO --entity ~.domain.Category
+repository jpa --interface com.legis.demo.dao.CommentDAO --entity ~.domain.Comment
+repository jpa --interface com.legis.demo.dao.FavoriteDAO --entity ~.domain.Favorite
+repository jpa --interface com.legis.demo.dao.News --entity ~.domain.News
+repository jpa --interface com.legis.demo.dao.PublicationDAO --entity ~.domain.Publication
+service type --interface com.legis.demo.service.ActivityService --entity ~.dao.ActivityDAO
+service type --interface com.legis.demo.service.AutorService --entity ~.dao.AutorDAO
+service type --interface com.legis.demo.service.BookService --entity ~.dao.BookDAO
+service type --interface com.legis.demo.service.CategoryService --entity ~.dao.CategoryDAO
+service type --interface com.legis.demo.service.CommentService --entity ~.dao.CommentDAO
+service type --interface com.legis.demo.service.FavoriteService --entity ~.dao.FavoriteDAO
+service type --interface com.legis.demo.service.NewsService --entity ~.dao.NewsDAO
+service type --interface com.legis.demo.service.PublicationService --entity ~.dao.PublicationDAO
+web mvc setup
+web mvc scaffold --class com.legis.demo.controller.ActivityController --backingType ~.domain.Activity
+web mvc scaffold --class com.legis.demo.controller.AutorController --backingType ~.domain.Autor
+web mvc scaffold --class com.legis.demo.controller.BookController --backingType ~.domain.Book
+web mvc scaffold --class com.legis.demo.controller.CategoryController --backingType ~.domain.Category
+web mvc scaffold --class com.legis.demo.controller.CommentController --backingType ~.domain.Comment
+web mvc scaffold --class com.legis.demo.controller.FavoriteController --backingType ~.domain.Favorite
+web mvc scaffold --class com.legis.demo.controller.NewsController --backingType ~.domain.News
+web mvc scaffold --class com.legis.demo.controller.PublicationController --backingType ~.domain.Publication
+security setup

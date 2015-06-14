@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_legis_demo_domain_Activity" modelAttribute="activity" path="/activitys" render="${empty dependencies}" z="yvjDASb9pFQ2n5y0zIv9whe6qco=">
+        <field:input field="id" id="c_com_legis_demo_domain_Activity_id" required="true" validationMessageCode="field_invalid_integer" z="F4ZD0fRTz5y3m3Vl1RQd/e2o6Gs="/>
+        <field:input field="activityName" id="c_com_legis_demo_domain_Activity_activityName" max="20" required="true" z="CYFEw8v+GjeUTOQslvwMsPrhyAY="/>
+        <field:select field="publication" id="c_com_legis_demo_domain_Activity_publication" itemValue="id_" items="${publications}" path="/publications" z="UamrnSuJ9gQ/kVVA/r7sJ2Z1JOc="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_legis_demo_domain_Activity" render="${not empty dependencies}" z="se7oUMTk/oWIvMPO1ax0DsEEouw="/>
+</div>

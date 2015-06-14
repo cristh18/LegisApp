@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_legis_demo_domain_Autor" items="${autors}" z="KOVN5rR+LLs2p06u1utk+X655uQ=">
+        <table:table data="${autors}" id="l_com_legis_demo_domain_Autor" path="/autors" typeIdFieldName="id_" z="TLP/Xpvl5+QmvwNGtTKSoOkY3ZM=">
+            <table:column id="c_com_legis_demo_domain_Autor_id" property="id" z="RlqQntMtJDcZUu/vnJdGJkN6bE4="/>
+            <table:column id="c_com_legis_demo_domain_Autor_autorName" property="autorName" z="qe5yT+X3PrgdFpdjp8sFtU5nUVs="/>
+            <table:column id="c_com_legis_demo_domain_Autor_autorLastName" property="autorLastName" z="85LSR9BVL3QGjsC2qBBDGxR1PNU="/>
+            <table:column id="c_com_legis_demo_domain_Autor_nationality" property="nationality" z="zv27ddo2mqS7lTtNrjEvY++imO4="/>
+            <table:column id="c_com_legis_demo_domain_Autor_publication" property="publication" z="3onsUFSG6f30H7S6QalA0I2E4rk="/>
+        </table:table>
+    </page:list>
+</div>

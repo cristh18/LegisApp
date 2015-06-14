@@ -1,0 +1,1 @@
+2015-06-13 22:36:04,071 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`legisapp`.`publication`, CONSTRAINT `FK_f71b3yc71hlpf4lxy8nlh6quw` FOREIGN KEY (`id_category`) REFERENCES `category` (`id_`))
